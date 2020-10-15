@@ -1,0 +1,8 @@
+debug
+release
+*.o
+*.obj
+Makefile*
+*.qmake
+*_moc
+
