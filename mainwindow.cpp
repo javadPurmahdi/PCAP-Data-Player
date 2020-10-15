@@ -8,6 +8,7 @@
 #include <Packet.h>
 
 #include <QFileDialog>
+#include <QMessageBox>
 #include <QThread>
 
 /*@/****************************************************************************
@@ -304,4 +305,7 @@ void MainWindow::playTimer_tick()
 void MainWindow::on_actionAbout_triggered()
 {
     QString msg = "This Application writen by javad \njavad.purmahdi@gmail.com";
+    QMessageBox msgBox;
+    msgBox.setText(msg);
+    msgBox.exec();
 }
